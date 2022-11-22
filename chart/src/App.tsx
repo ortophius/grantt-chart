@@ -1,11 +1,6 @@
 import { Chart } from './features/chart/';
 import './App.scss';
 
-function App() {
-
-  return (
-  <Chart />
-  )
-}
+const App = () => <Chart />
 
 export default App;

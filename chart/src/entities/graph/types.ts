@@ -25,7 +25,7 @@ export type Graph = {
 export type MappedGraph = {
   project: string;
   period: string;
-  startDate: Date | null;
+  startDate: string | null;
   chart: Record<MappedEndtry["id"], MappedEndtry>;
   rootId: MappedEndtry["id"];
 }

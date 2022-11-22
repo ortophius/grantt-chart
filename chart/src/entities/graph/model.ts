@@ -38,7 +38,7 @@ const mapGraphToState = (graph: Graph) => {
 
   const startDate = getDateOfMonday(new Date(
     Math.min(...entryStartDates.map((date) => Number(new Date(date))))
-  ))
+  )).toString();
 
   return {
     ...graph,

@@ -1,4 +1,4 @@
-import { Chart } from './features/chart/ui/chart/chart';
+import { Chart } from './features/chart/';
 import './App.scss';
 
 function App() {

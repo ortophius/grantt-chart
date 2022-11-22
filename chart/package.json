@@ -25,7 +25,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start & node cors-proxy.js",
+    "start": "concurrently --kill-others \"react-scripts start\"  \"node cors-proxy.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@types/redux": "^3.6.0",
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "concurrently": "^7.6.0"
   }
 }

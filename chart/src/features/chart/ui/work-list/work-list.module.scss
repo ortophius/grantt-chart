@@ -1,0 +1,141 @@
+.workList {
+  display: grid;
+  grid-template-columns: auto;
+  grid-auto-rows: var(--chart-column-size);
+  grid-column: 1 / -1;
+  grid-row: 4 / -1;
+}
+
+.workTable {
+  display: grid;
+  grid-template-columns: 390px repeat(var(--chart-length), var(--chart-column-size));
+  grid-auto-rows: var(--chart-row-size);
+  grid-column: 1 / -1;
+  grid-row: 4 / -1;
+  align-items: center;
+}
+
+.header {
+  background-color: var(--color-light-background);
+  font-size: 14px;
+  grid-row: 1 / span 2;
+  padding: 15px 20px;
+}
+
+.workItem {
+  display: flex;
+  align-items: center;
+  grid-column: 1;
+  border-bottom: 1px solid var(--color-grey); 
+  height: 100%;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.workItem:first-child {
+  border-top: 1px solid var(--color-grey);
+
+}
+
+.candleRow {
+  grid-column: 2 / -1;
+}
+
+.candle {
+  height: 24px;
+  border-radius: 4px;
+  animation: 0.4s ease-in-out appear;
+}
+
+.candleLabel {
+  grid-column: auto / span -1;
+}
+
+.candle-1 {
+  background-color: var(--color-blue);
+  border: 1px solid var(--color-dark-blue);
+}
+.candle-2 {
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-dark-yellow);
+}
+.candle-3 {
+  background-color: var(--color-green);
+  border: 1px solid var(--color-dark-green);
+}
+.candle-4 {
+  background-color: var(--color-green);
+  border: 1px solid var(--color-dark-green);
+}
+.candle-5 {
+  background-color: var(--color-yellow);
+  border: 1px solid var(--color-dark-yellow);
+}
+
+.chevron {
+  font-size: 16px;
+  color: #6D6E85;
+  margin-right: 4px;
+  transition: 0.2s;
+}
+
+.chevronClosed {
+  transform: scaleY(-1);
+}
+
+@for $i from 1 through 5 {
+  .level-#{$i} {
+    padding-left: calc(9px * $i);
+  }
+}
+
+.taskIcon {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-light-magenta);
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-dark-magenta);
+  margin-right: 4px;
+}
+
+.level-2  .taskIcon {
+  background-color: var(--color-light-green);
+  color: var(--color-dark-green);
+  &:before { content: '\e80a'; }
+}
+
+.level-3  .taskIcon {
+  background-color: var(--color-light-yellow);
+  color: var(--color-mid-yellow);
+  &:before { content: '\e80b'; }
+}
+
+.level-4  .taskIcon {
+  background-color: var(--color-light-red);
+  color: var(--color-red);
+  &:before { content: '\e80c'; }
+}
+
+.level-5  .taskIcon {
+  &:before { content: '\e80d'; }
+}
+
+.childrenCount {
+  font-weight: 300;
+  font-size: 12;
+  color: #8B8C9E;
+  margin-right: 8px;
+}
+
+@keyframes appear {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

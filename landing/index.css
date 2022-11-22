@@ -1,0 +1,636 @@
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-Bold.eot');
+  src: local('Euclid Circular A Bold'), local('EuclidCircularA-Bold'),
+      url('/assets/fonts/EuclidCircularA-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-Bold.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-Bold.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-Light.eot');
+  src: local('Euclid Circular A Light'), local('EuclidCircularA-Light'),
+      url('/assets/fonts/EuclidCircularA-Light.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-Light.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-Light.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-BoldItalic.eot');
+  src: local('Euclid Circular A Bold Italic'), local('EuclidCircularA-BoldItalic'),
+      url('/assets/fonts/EuclidCircularA-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-BoldItalic.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-BoldItalic.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-LightItalic.eot');
+  src: local('Euclid Circular A Light Italic'), local('EuclidCircularA-LightItalic'),
+      url('/assets/fonts/EuclidCircularA-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-LightItalic.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-LightItalic.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-Regular.eot');
+  src: local('Euclid Circular A Regular'), local('EuclidCircularA-Regular'),
+      url('/assets/fonts/EuclidCircularA-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-Regular.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-Regular.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-SemiBold.eot');
+  src: local('Euclid Circular A SemiBold'), local('EuclidCircularA-SemiBold'),
+      url('/assets/fonts/EuclidCircularA-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-SemiBold.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-SemiBold.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-Medium.eot');
+  src: local('Euclid Circular A Medium'), local('EuclidCircularA-Medium'),
+      url('/assets/fonts/EuclidCircularA-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-Medium.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-Medium.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-Italic.eot');
+  src: local('Euclid Circular A Italic'), local('EuclidCircularA-Italic'),
+      url('/assets/fonts/EuclidCircularA-Italic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-Italic.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-Italic.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-SemiBoldItalic.eot');
+  src: local('Euclid Circular A SemiBold Italic'), local('EuclidCircularA-SemiBoldItalic'),
+      url('/assets/fonts/EuclidCircularA-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-SemiBoldItalic.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-SemiBoldItalic.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Euclid';
+  src: url('/assets/fonts/EuclidCircularA-MediumItalic.eot');
+  src: local('Euclid Circular A Medium Italic'), local('EuclidCircularA-MediumItalic'),
+      url('/assets/fonts/EuclidCircularA-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/EuclidCircularA-MediumItalic.woff2') format('woff2'),
+      url('/assets/fonts/EuclidCircularA-MediumItalic.woff') format('woff'),
+      url('/assets/fonts/EuclidCircularA-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('/assets/fonts/fontello.eot?38341347');
+  src: url('/assets/fonts/fontello.eot?38341347#iefix') format('embedded-opentype'),
+       url('/assets/fonts/fontello.woff2?38341347') format('woff2'),
+       url('/assets/fonts/fontello.woff?38341347') format('woff'),
+       url('/assets/fonts/fontello.ttf?38341347') format('truetype'),
+       url('/assets/fonts/fontello.svg?38341347#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Euclid", sens-serif;
+  box-sizing: border-box;
+  /* simple reset */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-magenta: #AE27ff;
+  --color-light-blue: #CBECFF;
+  --color-light-blue-2: #E9F6FF;
+  --color-light-blue-3: #EFF9FF;
+  --color-blue: #0962E8;
+  --color-dark-blue: #29374E;
+  --color-white: #FFF;
+  font-size: 16px;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-dark-blue);
+}
+
+picture {
+  display: contents;
+}
+
+.no_break {
+  white-space: nowrap;
+}
+
+.icon {
+  font-family: 'fontello';
+  font-style: normal;
+}
+
+.icon_graph:before { content: '\e800'; }
+.icon_activity:before { content: '\e801'; }
+.icon_filter:before { content: '\e802'; }
+.icon_setting:before { content: '\e803'; }
+.icon_profit:before { content: '\e807'; }
+.icon_heart:before { content: '\e808'; }
+.icon_cycle:before { content: '\e809'; }
+.icon_money:before { content: '\e80a'; }
+
+.show_demo_button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 20px;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  min-height: 52px;
+  min-width: 200px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.show_demo_button:hover {
+  background-color: var(--color-magenta);
+}
+
+.section_content {
+  box-sizing: content-box;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.highlight {
+  color: var(--color-blue);
+}
+
+.product_info {
+  position: relative;
+  max-width: 37.5%;
+  margin-bottom: 32px;
+  z-index: 10;
+  margin-top: 76px;
+}
+
+.product_title {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.product_title .highlight {
+  background-color: var(--color-white);
+  border-radius: 20px;
+  padding: 0 12px;
+}
+
+.product_description {
+  font-weight: 300;
+  font-size: 1.375rem;
+  margin-bottom: 38px;
+}
+
+.language_selector {
+  display: flex;
+  margin-left: auto;
+  width: fit-content;
+  user-select: none;
+}
+
+.language_selector input + span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 24px;
+  min-width: 26px;
+  padding: 2px 4px;
+  font-size: 14px;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.language_selector input:checked + span {
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+.language_variant label {
+  cursor: pointer;
+}
+
+.language_variant input {
+  display: none;
+}
+
+.language_variant + .language_variant {
+  margin-left: 12px;
+}
+
+#main_screen {
+  background-color: var(--color-light-blue);
+  padding: 22px 0 32px 0;
+  background-size: 761px 680px;
+  overflow-x: clip;
+  overflow-y: visible;
+}
+
+#main_screen .section_content {
+  position: relative;
+  min-height: 670px;
+}
+
+.main_image {
+  position: absolute;
+  max-width: 761px;
+  top: 24px;
+  right: -5%;
+  min-width: 0;
+}
+
+.promo_cards {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  bottom: -42px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+  z-index: 10;
+}
+
+.promo_card {
+  display: flex;
+  flex-basis: 25%;
+  align-items: flex-start;
+  background: var(--color-white);
+  border-radius: 20px;
+  box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 22px 20px;
+}
+
+.promo_card_text {
+  margin-right: 36px;
+}
+
+.promo_card_icon {
+  position: relative;
+  top: -8px;
+  left: 2px;
+  font-size: 1.25rem;
+  padding: 8px;
+  background-color: var(--color-light-blue-3);
+  border-radius: 50%;
+  color: var(--color-blue)
+}
+
+#promo_cards_screen {
+  margin-top: -64px;
+}
+
+#products_screen {
+  padding-top: 115px;
+  padding-bottom: 60px;
+}
+
+.section_title {
+  font-weight: normal;
+  font-size: 2.375rem;
+  line-height: 130%;
+  text-align: center;
+}
+
+.products_title {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 44px;
+}
+
+.product_cards {
+  display: flex;
+  gap: 20px;
+}
+
+.product_card {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  border-radius: 30px;
+  background-color: var(--color-light-blue-2);
+  padding: 36px 20px 0 20px;
+  min-height: 328px;
+  overflow: hidden;
+}
+
+.product_card_image {
+  align-self: flex-end;
+  max-width: 218px;
+  height: auto;
+  filter: drop-shadow(8px -8px 16px rgba(0, 0, 0, 0.06));
+}
+
+.product_card_title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.product_card_description {
+  font-size: 0.875rem;
+}
+
+.product_card_text {
+  flex-basis: 38%;
+}
+
+#worth_screen {
+  padding: 60px 0 60px 0;
+}
+
+#worth_screen .section_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.benefits_info {
+  flex-basis: 42%;
+}
+
+.benefits_title {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.benefits_description {
+  font-size: 0.875rem;
+  margin-bottom: 36px;
+}
+
+.benefits {
+  display: flex;
+  gap: 60px;
+}
+
+.benefits_cards {
+  display: grid;
+  grid-template-columns: 40% auto;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 20px;
+  flex-basis: 45%;
+}
+
+.benefit_card {
+  padding: 10px 8px 22px 24px;
+  border-radius: 30px;
+}
+
+.benefit_icon {
+  position: relative;
+  left: -2px;
+  color: var(--color-blue);
+  font-size: 2rem;
+  z-index: 20;
+}
+
+.benefit_icon_background {
+  position: relative;
+  left: 2px;
+  border-radius: 50%;
+  background-color: var(--color-light-blue-3);
+  overflow: visible;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 12px;
+}
+
+.benefit_card_text {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 1140px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  :root {
+    font-size: initial;
+  }
+
+  #main_screen .section_content {
+    min-height: auto;
+  }
+
+  .main_image {
+    width: 360px;
+    right: 60px;
+  }
+
+  .product_description {
+    font-size: 1rem;
+  }
+
+  .promo_cards {
+    position: static;
+    grid-template-columns: repeat(2, minmax(164px, auto));
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+    justify-content: center;
+  }
+  .product_cards {
+    flex-direction: column;
+  }
+  
+  .product_card_text {
+    flex-basis: auto;
+    margin-right: 0;
+  }
+
+  .product_card_title {
+    font-size: 1.75rem;
+  }
+
+  .product_card_description {
+    font-size: 1rem;
+  }
+
+  .section_title {
+    font-size: 2rem;
+  }
+
+  #products_screen {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  #worth_screen {
+    padding-top: 20px;
+  }
+
+  #worth_screen .section_content {
+    flex-direction: column;
+  }
+
+  .benefits_info {
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .benefits_title {
+    text-align: center;
+  }
+
+  .benefits_cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit_card {
+    box-shadow: 6px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .benefit_icon {
+    position: static;
+    font-size: 1.5rem;
+  }
+
+  .benefit_icon_background {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .product_card_title {
+    font-size: 1rem;
+  }
+
+  .product_card_description {
+    font-size: 0.812rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .show_demo_button {
+    width: 100%;
+  }
+
+  .section_content {
+    padding: 0 16px;
+  }
+
+  #main_screen .section_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main_image {
+    position: relative;
+    right: initial;
+    width: 440px;
+    left: 20px;
+  }
+
+  .product_info {
+    margin-top: 12px;
+    max-width: none;
+  }
+
+  .product_title {
+    font-size: 2.75rem;
+    margin-bottom: 12px;
+  }
+  
+  .product_description {
+    margin-bottom: 16px;
+  }
+
+  .promo_card {
+    position: relative;
+    padding: 42px 12px 18px 18px;
+  }
+  
+  .promo_card_icon {
+    position: absolute;
+    top: -5px;
+    left: 18px;
+  }
+
+  .promo_card_text {
+    font-size: 0.875rem;
+    margin-right: 0;
+  }
+
+  .section_title {
+    font-size: 1.5rem;
+  }
+
+  #products_screen {
+    padding-top: 40px;
+  }
+
+  .products_title {
+    margin-bottom: 24px;
+  }
+
+  .product_card_image {
+    width: 142px;
+  }
+
+  .product_card {
+    padding: 25px 20px 0 16px;
+    min-height: 215px;
+    gap: 8px;
+  }
+}

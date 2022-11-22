@@ -1,0 +1,52 @@
+.chartLayout {
+  max-width: 1400px;
+  margin: 24px auto;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+}
+
+.exportButton {
+  display: flex;
+  align-items: center;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid rgba(38, 40, 66, 0.12);
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 10px 16px;
+  cursor: pointer;
+
+  &:before {
+    content: '\e80e';
+    display: block;
+    margin-right: 8px;
+    font-family: "fontello";
+    font-size: 22px;
+    speak: never;
+  }
+}
+
+.table {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background-image: linear-gradient( to right, rgba(16, 31, 43, 0), rgba(16, 31, 43, 0.1));
+  }
+}
